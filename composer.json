@@ -1,5 +1,5 @@
 {
-  "name": "Bounteous/StoreLocations",
+  "name": "bounteous/storelocations",
   "description": "Store location - get your position",
   "type": "magento2-module",
   "version": "0.0.1",
@@ -15,5 +15,7 @@
     "psr-4": {
       "Bounteous\\StoreLocations\\": ""
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
