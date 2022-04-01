@@ -32,7 +32,7 @@ To enter the list of stores from the frontend, it is necessary to enter the foll
 
 (change the main url to your testing url)
 
-{http://local.magento.com}/stores
+http://local.magento.com}/stores
 
 In this url you can get position through longitude and latitude.
 
