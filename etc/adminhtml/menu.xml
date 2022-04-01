@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add
+            id="Bounteous_StoreLocations::parent"
+            title="Store Locations"
+            module="Bounteous_StoreLocations"
+            sortOrder="70"
+            resource="Bounteous_StoreLocations::parent"
+        />
+        <add
+            id="Bounteous_StoreLocations::rules"
+            title="Manage Store Locations"
+            module="Bounteous_StoreLocations"
+            sortOrder="20"
+            parent="Bounteous_StoreLocations::parent"
+            action="stores/rules"
+            resource="Bounteous_StoreLocations::rules"
+        />
+    </menu>
+</config>

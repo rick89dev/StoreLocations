@@ -1,0 +1,39 @@
+<?php
+$collection = $block->escapeHtml($block->getList())
+?>
+
+<table>
+    <tr>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip Code</th>
+    </tr>
+    <?php foreach ($collection as $key => $item): ?>
+        <tr>
+            <td><p><?php echo $item[2] ?></p></td>
+            <td><p><?php echo $item[3] ?></p></td>
+            <td><p><?php echo $item[4] ?></p></td>
+            <td><p><?php echo $item[5] ?></p></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+<br>
+<br>
+<div id="store-location" data-bind="scope:'storelocation'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+    {
+        "#store-location": {
+            "Magento_Ui/js/core/app": {
+               "components": {
+                    "storelocation": {
+                        "component": "Bounteous_StoreLocations/js/storelocation",
+                        "template" : "Bounteous_StoreLocations/storelocation"
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</div>

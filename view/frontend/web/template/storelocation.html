@@ -1,0 +1,26 @@
+<div class="component-wrapper">
+    <div class="actions-toolbar">
+        <div class="secondary">
+            <button class="action action-check" type="button" data-bind="'value': $t('Get my location'), click: checkStore">
+                <span><!-- ko i18n: 'Get my location'--><!-- /ko --></span>
+            </button>
+            <button class="action action-clean" type="button" style="display: none" data-bind="'value': $t('Get my location'), click: cleanStore">
+                <span><!-- ko i18n: 'Clean'--><!-- /ko --></span>
+            </button>
+        </div>
+    </div>
+    <br>
+    <span class="error-message" style="color: red"></span>
+    <br>
+    <div class="field">
+        <div class="control">
+            <input class="input-text"
+                   type="text"
+                   id="store-code"
+                   name="store"
+                   data-validate="{'required-entry':false}"
+                   data-bind="value: storeCode "
+                    style="max-width: 500px"/>
+        </div>
+    </div>
+</div>
