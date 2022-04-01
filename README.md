@@ -8,8 +8,11 @@ Magento version >= 2.4.3
 Installation
 
 1.- Create a new foler "Bounteous" in the path /app/code/
+
 2.- Enter the module folder in the path /app/code/Bounteous/
+
 3.- bin/magento module:enable Bounteous_StoreLocations
+
 4.- php bin/magento setup:upgrade
 
 Magento admin
