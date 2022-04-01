@@ -11,7 +11,7 @@ Installation
 
 2.- Enter the module folder in the path /app/code/Bounteous/
 
-La ruta debe ser la siguiente:
+The path should be the following:
    */app/code/StoreLocations/*
 
 3.- bin/magento module:enable Bounteous_StoreLocations
